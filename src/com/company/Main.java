@@ -2,13 +2,14 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
-	// write your code here
-        Person p = new Person();
-        p.name = "Alice";
-        p.age = 20;
-        p.isAlive = true;
+    public static void main(String[] args){
 
-        System.out.println(p.name);
+        Person p = new Person("John");
+        System.out.println(p.getName());
+
+        p.setName("Ben");
+        System.out.println(p.getName());
+
+        Person.isValidName("Bob Johnson");
     }
 }
